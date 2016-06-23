@@ -1,0 +1,108 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>无标题页</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+            height: 482px;
+            margin-left: 180px;
+            margin-right: 0px;
+        }
+        .style2
+        {
+            height: 80px;
+            width: 730px;
+        }
+        .style4
+        {
+            height: 80px;
+            width: 320px;
+        }
+        .style5
+        {
+            height: 304px;
+        }
+        .style6
+        {
+            width: 730px;
+        }
+        .style7
+        {
+            height: 83px;
+            width: 730px;
+        }
+        .style8
+        {
+            width: 320px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <table class="style1" align="center">
+        <tr>
+            <td class="style4" rowspan="2">
+                <asp:Image ID="Image1" runat="server" ImageUrl="~/Images/logo.jpg" 
+                    Width="378px" />
+            </td>
+            <td class="style2">
+            </td>
+        </tr>
+        <tr>
+            <td class="style7" align="left" valign="bottom" 
+                style="font-size: 18px; font-family: 宋体;">
+                <asp:HyperLink runat="server" Font-Bold="True" Font-Italic="False" Width="90px" 
+                    Font-Underline="False" ForeColor="Black" NavigateUrl="~/Index.aspx">首页</asp:HyperLink>
+                <asp:HyperLink ID="HyperLink2" runat="server" Font-Bold="True" Width="90px" 
+                    Font-Underline="False" ForeColor="Black" NavigateUrl="~/UserIndex.aspx">个人页</asp:HyperLink>
+                <asp:HyperLink ID="HyperLink3" runat="server" Font-Bold="True" 
+                    Font-Italic="False" Width="90px" Font-Underline="False" ForeColor="Black" 
+                    NavigateUrl="~/SearchVideo.aspx">Search</asp:HyperLink>
+                <asp:HyperLink ID="HyperLink4" runat="server" Font-Bold="True" 
+                    Font-Italic="False" Width="90px" Font-Underline="False" ForeColor="Black" 
+                    NavigateUrl="~/Login.aspx">Login</asp:HyperLink>
+                <asp:HyperLink ID="HyperLink5" runat="server" Font-Bold="True" Width="105px" 
+                    Font-Underline="False" ForeColor="Black" NavigateUrl="~/Register.aspx">Register</asp:HyperLink>
+            </td>
+        </tr>
+        <tr>
+            <td class="style5" colspan="2">
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+            </td>
+        </tr>
+        <tr>
+            <td class="style8" align="right">
+                <asp:Label ID="Label1" runat="server" Font-Size="10pt" 
+                    Text="PROUDLY POWERED BY KYM | SPUN BY MINONE KUANG"></asp:Label>
+                <br />
+
+                <asp:Label ID="Label2" runat="server" Font-Size="10pt" 
+                    Text="MINONE ©2013-2015 ALL RIGHTS RESERVED"></asp:Label>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </td>
+            <td class="style6">
+               
+                <asp:Image ID="Image2" runat="server" Height="90px" 
+                    ImageUrl="~/Images/weichat.png" Width="90px" style="margin-left: 85px" />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+               
+                            <asp:Image ID="Image3" runat="server" ImageUrl="~/Images/code.png" 
+                    Width="90px" />
+
+            </td>
+        </tr>
+    </table>
+    </form>
+    </body>
+</html>

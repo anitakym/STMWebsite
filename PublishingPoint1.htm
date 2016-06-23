@@ -1,0 +1,100 @@
+﻿
+
+<html>
+<head>
+	<META HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE">
+	<META HTTP-EQUIV="content-type" CONTENT="text/html; charset=UTF-8">
+	<title>发布点 PublishingPoint1 的公告</title>
+	<script language="JavaScript">
+		var L_LAUNCHSAP_TEXT = "启动独立的 Windows Media Player";
+		var g_bNetscape = ( -1 != navigator.appName.indexOf( "Netscape" ) );
+	</script>
+
+	<style>
+	BODY
+	{
+		font-size : medium;
+		font-family : 宋体, Tahoma, Arial, Sans Serif;
+		font-weight : normal;
+		font-style : normal;
+		color : #FFFFFF;
+		background-color : #3366CC;
+		border-style : none;
+	}
+	A
+	{
+		color : #66CCFF;
+		font-weight : bold;
+	}
+	</style>
+	<script language="JavaScript">
+	<!--
+		if ( navigator.appName == "Netscape" )
+		{         	//-- This next line ensures that any plugins just installed are updated in the Browser
+					//-- without quitting the browser.
+					navigator.plugins.refresh();
+					// We don't need the APPLET within IE
+					// ***Please note that if you do not need to script events, you can safely remove the next two lines
+					document.write("\x3C" + "applet MAYSCRIPT Code=NPDS.npDSEvtObsProxy.class")
+					document.writeln(" width=5 height=5 name=appObs\x3E \x3C/applet\x3E")
+		} //-->
+	</script>
+
+	<script LANGUAGE="VBSCRIPT">
+		Sub cmdStandAlone_onclick
+			If isobject(WMP) Then
+				If WMP.playstate > 0 Then
+					WMP.Close()
+				End If
+				location.href = "mms://CUC-O5Y9XHHEUPK/PublishingPoint1"
+			End If
+		End Sub
+	</script>
+
+</head>
+
+<body bgcolor="#FFFFFF" topmargin="0" leftmargin="0">
+<div align="center">
+	<center>
+	<table border="0" width="100%" height="80%">
+		<tr>
+			<td width="100%">
+				<p align="center"><b>基于 Windows Media 的内容</b>
+			</td>
+		</tr>
+		<tr>
+			<td width="100%">
+			<p align="center"><b>发布点: PublishingPoint1</b></td>
+		</tr>
+		<tr>
+			<td width="100%">
+			<p align="center">
+			<script language="Javascript">
+				if( g_bNetscape )
+				{
+					document.writeln( "<APPLET mayscript code=WMPNS.WMP name=WMP1 width=300 height=200 MAYSCRIPT >" );
+				}
+			</script>
+			<OBJECT CLASSID="clsid:6BF52A52-394A-11D3-B153-00C04F79FAA6" ID="WMP">
+			<PARAM NAME="Name" VALUE="WMP1">
+			<PARAM NAME="URL" VALUE="mms://CUC-O5Y9XHHEUPK/PublishingPoint1">
+			</OBJECT>
+			</APPLET>
+			</td>
+		</tr>
+		<tr>
+			<td width="100%"><p align="center">&nbsp;
+			<script language="Javascript">
+				if( !g_bNetscape )
+				{
+					document.writeln( "<input type=\"button\" id=\"cmdStandAlone\" value=\"" + L_LAUNCHSAP_TEXT + "\">" );
+				}
+			</script>
+		</tr>
+	</table>
+	</center>
+</div>
+
+</body>
+
+</html>
